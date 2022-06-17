@@ -1,12 +1,14 @@
 #!/opt/lampp/bin/php
 <?php
 //MQTT treatment to get message's tags alone
-$message = shell_exec(`mosquitto_sub -h localhost -u root -p passroot -t teste -C 1`);
-$date = echo `date +%d/%m`
-$time = echo `date %H:%M:%S`
-$idValue = $message | jq '.id'
-$idCap = $message | jq '.cap'
-$value = $message | jq'.value'
+$message = shell_exec('mosquitto_sub -h localhost -u root -P passroot -t teste -C 1');
+$data = json_decode($message);
+$date = date ("d/m");
+$time = date ("H:i:s");
+$idValue = $data->id;
+$idCap = $data->cap;
+$value = $data->value;
+$idBat = '';
 
 //sensor treatment to get all sensor tags for the BDD
 if ($idCap == '1'){ 			#All other sensor's tags are given by the sensor ID
@@ -33,8 +35,8 @@ if ($idBat == 'E') {			#All other batiment's tags are given by the sensor ID
 }
 
 //Connection and sending tags and values into our BDD
-mysqli_connect("localhost","root","passroot","capteurs"); #connecting to our BDD
-mysqli_request(INSERT TO mesure VALUES('$idValue','$idCap','$typCap','$date','$time','$value'); #sending of our values and tags in the good table of our BDD
-mysqli_request(INSERT TO Capteur VALUES('$idCap','$typCap','$room','$idBat');
-mysqli_request(INSERT TO batiment VALUES('$idBat','$nomBat','$gestBat');
+$link = mysqli_connect("localhost","admin","","test"); #connecting to our DB
+mysqli_query($link, "INSERT TO Mesure VALUES('$idValue','$idCap','$typCap','$date','$time','$value')"); #sending of our values and tags in the good table of our BDD
+mysqli_query($link, "INSERT TO Capteur VALUES('$idCap','$typCap','$room','$idBat')");
+mysqli_query($link, "INSERT TO Batiment VALUES('$idBat','$nomBat','$gestBat')");
 ?>
