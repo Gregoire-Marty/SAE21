@@ -1,0 +1,173 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fad8d8;
+  background-image: url(../images/bcg1.jpg);
+  background-size: cover;
+}
+
+body {
+	background-image: url(../images/bcg1.jpg);
+	background-size: cover;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  background-color: #333333;
+  color: red;
+  z-index: 1;                 /*définit l'ordre d'affichage superposé au dessus des "z-index: auto"*/
+}
+
+nav{                          /*css de la navigation...*/
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	top: 5em;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+	color: #bf08fa;
+}
+
+nav a.first{
+	color: DodgerBlue;
+	border-bottom: 5px solid DodgerBlue;
+}
+
+nav a:hover:not(nav a.first){
+	color: orange;
+	border-bottom: 2px solid gold;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul::after{
+	display: table;
+	clear: both;
+}
+
+nav li{
+	float: left;
+    width: 20%;
+	text-align: center;
+}                                    /*...fin du css de la navigation*/
+
+
+section#first{                       /*css des sections, aside...*/
+  padding-top: 180px;
+}
+
+section 
+{
+  padding-top: 35px;	
+  padding-left: 40px;
+  padding-right: 15px;
+  font-size: 1.2em;
+}
+
+aside#last
+{
+  padding-top: 25px;	
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 90px;
+}
+
+aside a
+{
+  text-decoration: none;
+}
+
+aside img
+{
+	border:0;
+	width:88px;
+	height:31px
+}                                      /*...fin du css des sections, aside*/
+
+/*div.left1{                       /*à faire, pour avoir un joli 'about me' sur fond rose fleur gift, puis y appliquer un effet d'apparition*
+	display: block;
+	float: left; 
+	padding: 5%;
+	margin-left: 15%;                         /* 15% block5% 10% block25% 15% *
+	border: 0.5rem solid;
+	text-align: center;
+}
+
+div ul{
+	list-style-type: none;
+}*/
+
+h1
+{ 
+  text-align: center;
+}
+
+footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 15px;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
+
+footer ul li
+{
+  float: left;
+  width:33%;
+  list-style-type: none;
+}
+
+footer ul li:first-child
+{
+  text-align: left;
+}
+
+footer ul li:last-child
+{
+  float:right;
+  text-align: right;
+}
+
+/* max-width pour faibles résolutions */
+@media screen and (max-width: 640px) 
+{
+	nav ul li 
+	{
+		float: none;
+		width: 100%;
+		border-right: none;
+	}
+
+	nav ul li a 
+	{
+		padding: 1px;
+	}
+
+	section#first 
+	{
+		padding-top: 300px;
+	}
+	section 
+	{
+		padding-top: 5px;
+		padding-right: 15px;
+	}
+	.image-responsive 
+	{
+		max-width: 100%;
+		height: auto;
+    }
+}
