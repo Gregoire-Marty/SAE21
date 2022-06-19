@@ -113,15 +113,17 @@
    <meta name="keywords" content="HTML, CSS, PHP" />
    <title> Gestion </title>
    <link rel="stylesheet" type="text/css" href="./Styles/styleRWD.css" />
+   <link rel="stylesheet" type="text/css" href="./Styles/styleRWD-Gestion.css" />
  </head>
 
  <body>
   <header>
     <h1> Administration de la base de données </h1>
-	<div class="logon">Session : <?php echo $login ?></div>					<!--To print the session-name on top-left of the website-->
-	<form method="get">
-		<input type="submit" name="close" value="Fermer la session">
-	</form>
+	<div class="session">Session : <?php echo $login ?>					<!--To print the session-name on top-left of the website-->
+		<form method="get">
+			<input type="submit" name="close" value="Fermer la session">
+		</form>
+	</div>
   </header>
   <nav>
     <ul>
