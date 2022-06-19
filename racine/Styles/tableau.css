@@ -20,13 +20,22 @@ Caption
 	padding: 13px;
 	
 }
+
 th
 {
 	background-color: gray;
-	color : #ffffff;
+	color : #FFFFFF;
 	text-align: center;
 	padding: 9px;
 }
+
+td
+{
+	background-color: white;
+	color : #000000;
+	text-align: center;
+}
+
 td.ef
 {
 	width: 100px;
