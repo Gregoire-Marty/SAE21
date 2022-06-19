@@ -1,0 +1,6 @@
+// Script à insérer dans le répertoire /etc
+// le nommer rc.local 
+
+#!/bin/sh -e
+/opt/lampp/lampp start
+exit 0
