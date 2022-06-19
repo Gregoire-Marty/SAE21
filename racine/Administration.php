@@ -1,3 +1,7 @@
+<?php
+	$error = isset($_GET['error']) ? $_GET['error'] : '';			//Recover the error's ID in URL
+	$password = isset($_GET['password']) ? $_GET['password'] : '';	//Recover the wrong password in URL
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -23,19 +27,31 @@
   </nav>
   
   <section id="first">
-  <form method="post" class="form-example">
-  <div class="form-example">
-    <label for="login">Login : </label>
-    <input type="text" name="login" id="login" required>
-  </div>
-  <div class="form-example">
-    <label for="password">Password: </label>
-    <input type="password" name="password" id="password" required>
-  </div>
-  <div class="form-example">
-    <input type="submit" value="Subscribe!">
-  </div>
-</form>
+  	<form action="Connexion.php" method="post" class="form-example">
+      <div class="form-example">
+        <label for="login">Login : </label>
+        <input type="text" name="login" required>
+  	  </div>
+	  <br>
+  	  <div class="form-example">
+        <label for="password">Password: </label>
+        <input type="password" name="password" required>
+    	</div>
+    	<div class="form-example">
+        <input type="submit" value="Subscribe!">
+  	  </div>
+    </form>
+<?php	
+	switch ($error) { //error management
+		case 1:       //error 1
+		echo "<div class=\"error\">Le mot de passe <b>$password</b> est invalide</div>";  //Print this messag on html page
+		break;        //stop managing the error 1
+		
+		case 2:
+		echo "</div class=\"error\"><b>MERCI DE NE PAS FORCER NOTRE SITE !</b></div>";  //div class error for css
+		break;
+	}				  //Stop error's management
+?>	
   </section>
 
   <footer>
@@ -48,26 +64,4 @@
  </body>
 </html>
 
-<?php
-	$link = mysqli_connect("localhost","admin@localhost","","test");
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		$login = $_POST["login"]; 
-		$mdp = $_POST["password"];
 
-	 	if (!isset($login)){
-		  die("S'il vous plaît entrez votre nom d'utilisateur");
-		}
-		if (!isset($mdp)){
-		  die("S'il vous plaît entrez votre mot de passe");
-		}
-		//$username = mysqli_real_escape_string($link, htmlspecialchars($_POST['username']))
-		
-		$request = mysqli_query($link, "SELECT count(*) FROM Administration where login ='$login' and motDePasse ='$mdp' ");
-		$count = mysqli_fetch_array($request);['count(*)'];
-		printf ("%s\n", $count[0]);
-		if($count[0] != 0){
-			$_SESSION['login'] = $login;
-			header('Location: ./Gestion.php');
-		}
-	}
-?>
