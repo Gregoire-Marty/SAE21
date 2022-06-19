@@ -51,4 +51,5 @@ ALTER TABLE Capteur
 	ADD CONSTRAINT fk_idBat FOREIGN KEY(idBat) REFERENCES Batiment(idBat);
 
 ALTER TABLE Mesure
-	ADD CONSTRAINT fk_idCapteur FOREIGN KEY(idCapteur) REFERENCES Capteur(idCapteur),fk_typeCapteur FOREIGN KEY(typeCapteur) REFERENCES Capteur(typeCapteur);
+	ADD CONSTRAINT fk_idCapteur FOREIGN KEY(idCapteur) REFERENCES Capteur(idCapteur);
+
