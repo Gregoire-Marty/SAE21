@@ -1,0 +1,7 @@
+/*Style of Gestion web page only*/
+
+nav li{
+	float: left;
+    width: 50%;
+	text-align: center;
+}                                    /*...fin du css de la navigation*/
