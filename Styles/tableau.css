@@ -1,0 +1,49 @@
+/* CSS style1 non adaptatif */
+
+table
+{
+	width: 400px;
+	border:	1px solid #000000;
+	border-collapse: collapse;
+}
+td,th
+{
+	border: 1px solid #000000;
+	background-color: #ffffff;
+	padding: 5px 10px;
+}
+Caption
+{
+	
+	background-color: #333333;
+	color: #ffffff;
+	padding: 13px;
+	
+}
+
+th
+{
+	background-color: gray;
+	color : #FFFFFF;
+	text-align: center;
+	padding: 9px;
+}
+
+td
+{
+	background-color: white;
+	color : #000000;
+	text-align: center;
+}
+
+td.ef
+{
+	width: 100px;
+	text-align: right;
+	padding: 5px 10px;
+	
+}
+th.ef
+{
+	width: 100px;
+}
