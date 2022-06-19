@@ -29,7 +29,7 @@ CREATE TABLE Batiment
 (
 	idBat varchar(1) NOT NULL,
 	nomBat varchar(30) NOT NULL,
-	gestBat varchar(30) NOT NULL,
+	gestBat varchar(5) NOT NULL,
 	CONSTRAINT pk_bat primary key(idBat)
 );
 
