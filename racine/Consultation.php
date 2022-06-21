@@ -41,9 +41,9 @@
   	$connexion = mysqli_connect("localhost","root@localhost","rt1");
   	mysqli_select_db ("sae", $connexion);
     
-    $r104 = mysqli_query("SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = "104");
+    $r104 = mysqli_query("SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = "E104"");
     
-    $r208 = mysqli_query("SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = "208");
+    $r208 = mysqli_query("SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = "E208"");
   	
 
     
