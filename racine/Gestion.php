@@ -108,7 +108,7 @@
   <head>
    <meta charset="utf-8"> 
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <meta name="author" content="MO" />
+   <meta name="author" content="Ollier, Marty" />
    <meta name="description" content="SAE23" />
    <meta name="keywords" content="HTML, CSS, PHP" />
    <title> Gestion </title>
