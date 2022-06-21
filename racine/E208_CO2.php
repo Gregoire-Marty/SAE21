@@ -55,13 +55,8 @@ Les differents boutons sont pour supprimer le capteur, ajouter le capteur et vid
    </div>
      <input type="submit" name="AddCap" value="Add Captor">
   </form>
-
-
-
-
   </section>
   
-
   <footer>
     <ul>
 	  <li>IUT de Blagnac</li>
