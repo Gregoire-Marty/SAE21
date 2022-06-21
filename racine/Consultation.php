@@ -17,8 +17,8 @@
   </header>
   <nav>
     <ul>
-		<li><a href="./Index.html" > Acceuil </a></li>
-		<li><a href="./Administration.html" > Administration </a></li>
+		<li><a href="./Index.php" > Acceuil </a></li>
+		<li><a href="./Administration.php" > Administration </a></li>
 		<li><a href="#" class="first"> Constulation </a></li>
 		
 		
