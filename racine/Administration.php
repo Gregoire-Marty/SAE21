@@ -27,20 +27,31 @@
   </nav>
   
   <section id="first">
-  	<form action="Connexion.php" method="post" class="form-example">
-      <div class="form-example">
-        <label for="login">Login : </label>
-        <input type="text" name="login" required>
-  	  </div>
-	  <br>
-  	  <div class="form-example">
-        <label for="password">Password: </label>
-        <input type="password" name="password" required>
-    	</div>
-    	<div class="form-example">
-        <input type="submit" value="Subscribe!">
-  	  </div>
-    </form>
+	  
+	  
+  	<div class="login-box">
+  <h2>Login</h2>
+  <form action="Connexion.php" method="post" class="form-example">
+    <div class="user-box">
+	<label>Username</label>
+      <input type="text" name="login" required="">
+      
+    </div>
+    <div class="user-box">
+	<label>Password</label>
+      <input type="password" name="password" required="">
+      
+    </div>
+    <a href="./Gestion.html">
+        <input type="submit" value="Connection">
+    </a>
+    </a>
+  </form>
+</div>
+	  
+	  
+  
+	  
 <?php	
 	switch ($error) { //error management
 		case 1:       //error 1
