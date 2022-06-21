@@ -22,7 +22,7 @@
     <ul>
 		<li><a href="./Index.html" > Accueil </a></li>
 		<li><a href="#" class="first"> Administration </a></li>
-		<li><a href="./Consultation.html" > Consultation </a></li>
+		<li><a href="./Consultation.php" > Consultation </a></li>
 	</ul>
   </nav>
   
