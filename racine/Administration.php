@@ -11,7 +11,7 @@
    <meta name="description" content="SAE23" />
    <meta name="keywords" content="HTML, CSS" />
    <title>Administration</title>
-   <link rel="stylesheet" type="text/css" href="./Styles/styleRWD.css" />
+   <link rel="stylesheet" type="text/css" href="./Styles/styleRWD_admin.css" />
  </head>
  
  <body>
