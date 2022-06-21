@@ -4,7 +4,7 @@
 
 	if(isset($_GET['DelCap'])){
 		mysqli_query($link,"ALTER TABLE Mesure DROP FOREIGN KEY fk_idCapteur");
-		mysqli_query($link,"DELETE FROM `test`.`Capteur` WHERE CONCAT(`Capteur`.`idCapteur`) = 3");
+		mysqli_query($link,"DELETE FROM `test`.`Capteur` WHERE CONCAT(`Capteur`.`idCapteur`) = 4");
 		echo "teste réussit !!";
 	}
 	if(isset($_GET['DelAll'])){
@@ -20,11 +20,12 @@
   <head>
    <meta charset="utf-8"> 
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <meta name="author" content="MO" />
+   <meta name="author" content="" />
    <meta name="description" content="SAE23" />
    <meta name="keywords" content="HTML, CSS" />
-   <title>Salle E208 </title>
+   <title>Salle E204 </title>
    <link rel="stylesheet" type="text/css" href="./Styles/styleRWD.css" />
+  
  </head>
  
  <body>
@@ -41,7 +42,8 @@
   <section id="first">
 
 Les differents boutons sont pour supprimer le capteur, ajouter le capteur et vider les valeur du capteur
-<br><br>
+<br>
+<br>
   <form action="" method="get" class="form-example">
    <div class="user-box">
 	<input type="submit" name="DelCap" value="supprimer le capteur correspondan">
@@ -55,13 +57,7 @@ Les differents boutons sont pour supprimer le capteur, ajouter le capteur et vid
    </div>
      <input type="submit" name="AddCap" value="Add Captor">
   </form>
-
-
-
-
   </section>
-  
-
   <footer>
     <ul>
 	  <li>IUT de Blagnac</li>

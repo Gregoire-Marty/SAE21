@@ -1,3 +1,20 @@
+<?php
+	require_once('Session_Verif.php');
+	$link = mysqli_connect("localhost","admin@localhost","","test");
+
+	if(isset($_GET['DelCap'])){
+		mysqli_query($link,"ALTER TABLE Mesure DROP FOREIGN KEY fk_idCapteur");
+		mysqli_query($link,"DELETE FROM `test`.`Capteur` WHERE CONCAT(`Capteur`.`idCapteur`) = 1");
+		echo "teste réussit !!";
+	}
+	if(isset($_GET['DelAll'])){
+		mysqli_query($link, "TRUNCATE Capteur;");}
+
+	if(isset($_GET['AddCap'])){
+		$idCap = $_GET['idCap'];
+		$room = $_GET['room'];
+	}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -26,22 +43,21 @@
 
 
 Les differents boutons sont pour supprimer le capteur, ajouter le capteur et vider les valeur du capteur
-<br>
-<br>
-
-	<form>
-	<div class="form-example">
-    <input type="submit" value="supprimer">
-  </div>
-<br>
-	<div class="form-example">
-    <input type="submit" value="ajouter">
-  </div>
-<br>
-	<div class="form-example">
-    <input type="submit" value="vider">
-  </div>
-</form>
+  <br>
+  <br>
+  <form action="" method="get" class="form-example">
+   <div class="user-box">
+	<input type="submit" name="DelCap" value="supprimer le capteur correspondan">
+	<input type="submit" name="DelAll" value="supprimer tou les capteur">
+	<label>Name/id</label>
+    <input type="text" name="idCap">
+   </div>
+   <div class="user-box">
+	<label>Room/E...</label>
+    <input type="txt" name="room">
+   </div>
+     <input type="submit" name="AddCap" value="Add Captor">
+  </form>
 <br>
 
 
