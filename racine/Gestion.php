@@ -159,6 +159,59 @@
 	<input type="submit" name="restorB" value="Réstaurer la table">
 	<input type="submit" name="videB" value="Vider la table">
   </form>
+ <br> <br> <br>
+  Agir sur la table capteur
+   <br> <br>
+   <form>
+  <div class="form-example">
+    <input type="submit" value="supprimer">
+  </div>
+<br>
+	<div class="form-example">
+    <input type="submit" value="ajouter">
+  </div>
+  <br>
+	<div class="form-example">
+    <input type="submit" value="vider">
+  </div>
+  </form>
+  
+  <br> <br> <br>
+   
+  Agir sur la table mesure
+   <br> <br>
+  
+  <form>
+  <div class="form-example">
+    <input type="submit" value="supprimer">
+  </div>
+<br>
+	<div class="form-example">
+    <input type="submit" value="ajouter">
+  </div>
+  <br>
+	<div class="form-example">
+    <input type="submit" value="vider">
+  </div>
+  </form>
+  <br> <br> <br>
+  
+  Agir sur la table batiment <br> <br>
+  
+ <form>
+  <div class="form-example">
+    <input type="submit" value="supprimer">
+  </div>
+<br>
+	<div class="form-example">
+    <input type="submit" value="ajouter">
+  </div>
+  <br>
+	<div class="form-example">
+    <input type="submit" value="vider">
+  </div>
+  </form>	  
+
   </section>
 
   <footer>
