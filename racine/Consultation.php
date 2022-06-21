@@ -19,16 +19,11 @@
     <ul>
 		<li><a href="./Index.html" > Acceuil </a></li>
 		<li><a href="./Administration.html" > Administration </a></li>
-		<li><a href="#" class="first"> Constulation </a></li>
-		
-		
+		<li><a href="#" class="first"> Constulation </a></li>	
 	</ul>
   </nav>
-  
+	 
   <section id="first">
-  
-
- 
   <table style="display:inline">
 <caption> <strong> batiment 1 </strong> </caption>
   <tr>
@@ -56,10 +51,7 @@
 	?>
 	
    </table>
- 
-   
- 
-   
+	  
     <table style="display:inline">
 <caption> <strong> batiment 2 </strong> </caption>
   <tr>
@@ -73,8 +65,6 @@
    </table>
  
   </section>
-  
-
  
   <footer>
     <ul>
