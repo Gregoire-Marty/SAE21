@@ -129,6 +129,7 @@
     <ul>
 		<li><a href="./Index.html" > Acceuil </a></li>
 		<li><a href="#" class="first"> Gestion </a></li>
+	    	<li><div class="deco"> <input type="submit" value="déconnexion"> </div></li>
 	</ul>
   </nav>
   <section id="first">
