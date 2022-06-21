@@ -174,40 +174,32 @@
 	<div class="form-example">
     <input type="submit" value="vider">
   </div>
-  </form>
-  
-  <br> <br> <br>
+</form><br> <br> <br>
    
   Agir sur la table mesure
    <br> <br>
-  
   <form>
-  <div class="form-example">
+<div class="form-example">
     <input type="submit" value="supprimer">
-  </div>
-<br>
-	<div class="form-example">
+  </div><br>
+<div class="form-example">
     <input type="submit" value="ajouter">
-  </div>
-  <br>
-	<div class="form-example">
+  </div><br>
+<div class="form-example">
     <input type="submit" value="vider">
   </div>
-  </form>
-  <br> <br> <br>
-  
+  </form> <br> <br> <br>
+
   Agir sur la table batiment <br> <br>
-  
  <form>
   <div class="form-example">
     <input type="submit" value="supprimer">
-  </div>
-<br>
-	<div class="form-example">
+  </div><br>
+<div class="form-example">
     <input type="submit" value="ajouter">
   </div>
   <br>
-	<div class="form-example">
+<div class="form-example">
     <input type="submit" value="vider">
   </div>
   </form>	  
