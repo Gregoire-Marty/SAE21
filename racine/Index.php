@@ -29,7 +29,7 @@
   <footer>
     <ul>
 	  <li>IUT de Blagnac</li>
-	  <li>Département Réseaux et Télécommunications</li>
+	  <li><a href="./Mention_legales.html">Mention_legales</a></li>
       <li>BUT1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 	</ul>  
   </footer>
