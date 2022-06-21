@@ -25,9 +25,8 @@
    <meta name="keywords" content="HTML, CSS" />
    <title>Salle E208</title>
    <link rel="stylesheet" type="text/css" href="./Styles/styleRWD.css" />
-  
  </head>
- 
+	
  <body>
   <header>
     <h1> Capteur Temperature </h1>
@@ -40,7 +39,6 @@
 	</ul>
   </nav>
   <section id="first">
-
 
 Les differents boutons sont pour supprimer le capteur, ajouter le capteur et vider les valeur du capteur
   <br>
@@ -58,13 +56,7 @@ Les differents boutons sont pour supprimer le capteur, ajouter le capteur et vid
    </div>
      <input type="submit" name="AddCap" value="Add Captor">
   </form>
-<br>
-
-
-
-
   </section>
-  
 
   <footer>
     <ul>
