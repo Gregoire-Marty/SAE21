@@ -47,7 +47,7 @@
   	
 
     
-	while ($data = mysql_fetch_array($r104))
+	while ($data = mysqli_fetch_array($r104))
 	{
 		echo "<tr> <td>$data['valeur']</td> <td>$data['typeCapteur']</td><td>$data['horaire']</td> </tr"
 	
