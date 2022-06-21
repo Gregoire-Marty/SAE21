@@ -24,7 +24,7 @@
    <meta name="description" content="SAE23" />
    <meta name="keywords" content="HTML, CSS" />
    <title>Salle E204 </title>
-   <link rel="stylesheet" type="text/css" href="./Styles/styleRWD.css" />
+   <link rel="stylesheet" type="text/css" href="./styles/styleRWD.css" />
  </head>
 
  <body>
