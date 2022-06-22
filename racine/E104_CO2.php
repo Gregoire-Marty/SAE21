@@ -36,7 +36,8 @@
     <ul>
 		<li><a href="./index.php"> Accueil </a></li>
 		<li><a href="./Gestion.php" > Gestion </a></li>
-		<li><a href="./Consultation.php"> Consultation </a></li>		
+		<li><a href="./Consultation.php"> Consultation </a></li>
+	    	<li><div class="deco"> <input type="submit" value="déconnexion"> </div></li>
 	</ul>
   </nav>
   <section id="first">
