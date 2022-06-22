@@ -19,11 +19,16 @@
     <ul>
 		<li><a href="./Index.html" > Acceuil </a></li>
 		<li><a href="./Administration.html" > Administration </a></li>
-		<li><a href="#" class="first"> Constulation </a></li>	
+		<li><a href="#" class="first"> Constulation </a></li>
+		
+		
 	</ul>
   </nav>
-	 
+  
   <section id="first">
+  
+
+ 
   <table style="display:inline">
 <caption> <strong> batiment 1 </strong> </caption>
   <tr>
@@ -33,25 +38,28 @@
   </tr>
   
   <?php
-  	$connexion = mysqli_connect("localhost","root@localhost","");
-  	mysqli_select_db ($connexion, "sae");
+  	$connexion = mysqli_connect("localhost","root@localhost","rt1");
+  	mysqli_select_db ("sae", $connexion);
     
-    $r104 = mysqli_query($connexion, "SELECT valeur FROM Mesure,Capteur WHERE numSalle = E104");
+    $r104 = mysqli_query("SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = "104");
     
-    $r208 = mysqli_query($connexion, "SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = E208");
+    $r208 = mysqli_query("SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = "208");
   	
 
     
-	while ($data = mysqli_fetch_array($r104))
+	while ($data = mysql_fetch_array($r104))
 	{
-		//echo "<tr> <td>$data['valeur']</td> <td>$data['typeCapteur']</td><td>$data['horaire']</td> </tr"
-		echo " $data";	
-	}
+		echo "<tr> <td>$data['valeur']</td> <td>$data['typeCapteur']</td><td>$data['horaire']</td> </tr"
+	
+	}	
 		
 	?>
 	
    </table>
-	  
+ 
+   
+ 
+   
     <table style="display:inline">
 <caption> <strong> batiment 2 </strong> </caption>
   <tr>
@@ -65,11 +73,13 @@
    </table>
  
   </section>
+  
+
  
   <footer>
     <ul>
 	  <li>IUT de Blagnac</li>
-	  <li><a href="./Mention_legales.html">Mention_legales</a></li>
+	  <li>Département Réseaux et Télécommunications</li>
       <li>BUT1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 	</ul>  
   </footer>
