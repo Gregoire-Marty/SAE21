@@ -24,7 +24,7 @@
    <meta name="description" content="SAE23" />
    <meta name="keywords" content="HTML, CSS" />
    <title>Salle E208 </title>
-   <link rel="stylesheet" type="text/css" href="./styles/styleRWD.css" />
+   <link rel="stylesheet" type="text/css" href="./Styles/styleRWD.css" />
  </head>
  
  <body>
@@ -55,12 +55,17 @@ Les differents boutons sont pour supprimer le capteur, ajouter le capteur et vid
    </div>
      <input type="submit" name="AddCap" value="Add Captor">
   </form>
+
+
+
+
   </section>
   
+
   <footer>
     <ul>
 	  <li>IUT de Blagnac</li>
-	  <li><a href="./Mention_legales.html">Mention_legales</a></li>
+	  <li>Département Réseaux et Télécommunications</li>
       <li>BUT1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 	</ul>  
   </footer>
