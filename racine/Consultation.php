@@ -33,20 +33,20 @@
   </tr>
   
   <?php
-  	$connexion = mysqli_connect("localhost","root@localhost","rt1");
-  	mysqli_select_db ("sae", $connexion);
+  	$connexion = mysqli_connect("localhost","root@localhost","");
+  	mysqli_select_db ($connexion, "sae");
     
-    $r104 = mysqli_query("SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = "E104"");
+    $r104 = mysqli_query($connexion, "SELECT valeur FROM Mesure,Capteur WHERE numSalle = E104");
     
-    $r208 = mysqli_query("SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = "E208"");
+    $r208 = mysqli_query($connexion, "SELECT valeur,typeCapteur,horaire FROM Mesure,Capteur WHERE numSalle = E208");
   	
 
     
 	while ($data = mysqli_fetch_array($r104))
 	{
-		echo "<tr> <td>$data['valeur']</td> <td>$data['typeCapteur']</td><td>$data['horaire']</td> </tr"
-	
-	}	
+		//echo "<tr> <td>$data['valeur']</td> <td>$data['typeCapteur']</td><td>$data['horaire']</td> </tr"
+		echo " $data";	
+	}
 		
 	?>
 	
