@@ -80,7 +80,7 @@ nav ul::after{
 
 nav li{
 	float: left;
-    width: 20%;
+    width: 33%;
 	text-align: center;
 }                                    /*...fin du css de la navigation*/
 
