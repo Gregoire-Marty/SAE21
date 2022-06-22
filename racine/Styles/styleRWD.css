@@ -7,9 +7,8 @@ body{
   color : rgb(255,255,255);
 }
 
-a { color: #ffffff; }
 
-input{
+input[type=button], input[type=submit]{
 background: #0066A2;
 color: white;
 border-style: outset;
@@ -21,7 +20,19 @@ text-shadow:none;
 }
 
 
+input.deco{
+background: #ffffff;
+color: #000000;
+border-style: outset;
+border-color: #ffffff;
+height: 50px;
+width: 165px;
+font: bold 15px arial, sans-serif;
+text-shadow:none;
+}
 
+
+a { color: #ffffff; }
 
 
 header{
@@ -69,7 +80,7 @@ nav ul::after{
 
 nav li{
 	float: left;
-    width: 33%;
+    width: 20%;
 	text-align: center;
 }                                    /*...fin du css de la navigation*/
 
@@ -131,7 +142,6 @@ footer
   bottom: 0;
   width: 100%;
   padding-bottom: 15px;
-  margin-top: 30px;
   background-color: #333333;
   color: white;
   text-align: center;

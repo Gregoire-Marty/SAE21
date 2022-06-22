@@ -7,8 +7,6 @@ body{
   color : rgb(255,255,255);
 }
 
-a { color: #ffffff; }
-
 input[type="submit"]{
 background: transparent;
 color: white;
