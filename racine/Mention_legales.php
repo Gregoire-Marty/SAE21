@@ -17,11 +17,9 @@
   </header>
   <nav>
     <ul>
-		<li><a href="#" class="first"> Mention légales </a></li>
-		<li><a href="./Administration.html"> Administration </a></li>
-		<li><a href="./Consultation.html"> Consultation </a></li>
-		
-		
+		<li><a href="./Index.php" > Accueil </a></li>
+	        <li><a href="./Administration.php"> Administration </a></li>
+		<li><a href="./Consultation.php"> Consultation </a></li>
 	</ul>
   </nav>
   <section id="first">
@@ -67,7 +65,7 @@ Le traitement de vos données à caractère personnel est régi par notre Charte
   <footer>
     <ul>
 	  <li>IUT de Blagnac</li>
-	  <li><a href="./Mention_legales.html">Mention_legales</a></li>
+	  <li><a href="#">Mention_legales</a></li>
       <li>BUT1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 	</ul>  
   </footer>
